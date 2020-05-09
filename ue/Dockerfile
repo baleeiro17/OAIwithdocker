@@ -13,3 +13,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt install -y tzdata
 RUN cd ue_folder/cmake_targets && sudo ./build_oai --UE -I -c
 
 COPY ue.nfapi.conf /ue_folder/ci-scripts/conf_files/ue.nfapi.conf
+COPY ue_eurecom_test_sfr.conf    /ue_folder/openair3/NAS/TOOLS/ue_eurecom_test_sfr.conf
+COPY script.sh /root/script.sh
+RUN chmod +x /root/script.sh
+CMD /root/scrip.sh ; /ue_folder/target/bin/conf2uedata -c /ue_folder/openair3/NAS/TOOLS/ue_eurecom_test_sfr.conf -o /ue_folder/cmake_targets/ran_build/build/
+
