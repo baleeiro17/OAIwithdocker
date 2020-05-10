@@ -11,7 +11,7 @@ Each box of project is based on a compiled free5gc image. To build this image us
 ``sudo docker build -t free5gc-base .``
 
 Each box of project is based on a compiled oaisim image. To build this image use the follow command:
-``sudo docker build -t oaisim-base  .``
+``cd oaisim-base sudo docker build -t oaisim-base  .``
 
 
 ## Running
