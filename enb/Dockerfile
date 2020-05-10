@@ -11,9 +11,9 @@ USER root
 COPY rcc.band7.tm1.nfapi.conf /enb_folder/ci-scripts/conf_files/rcc.band7.tm1.nfapi.conf
 RUN DEBIAN_FRONTEND=noninteractive apt install -y tzdata
 RUN cd enb_folder/cmake_targets && sudo ./build_oai --eNB --mu -I -c
-COPY exec.sh /root/
-RUN chmod +x /root/exec.sh
-ENTRYPOINT ["/root/exec.sh"]
+COPY exec.sh /exec.sh
+RUN chmod +x /exec.sh
+ENTRYPOINT ["/exec.sh"]
 
 
 

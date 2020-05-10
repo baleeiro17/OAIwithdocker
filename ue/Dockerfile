@@ -18,4 +18,7 @@ COPY script.sh /root/script.sh
 RUN chmod +x /root/script.sh
 RUN sudo ./root/script.sh
 RUN cd ue_folder/targets/bin && sudo ./conf2uedata -c /ue_folder/openair3/NAS/TOOLS/ue_eurecom_test_sfr.conf -o /ue_folder/cmake_targets/ran_build/build/
+COPY exec.sh /exec.sh
+RUN chmod +x /exec.sh
+ENTRYPOINT ["/exec.sh"]
 
