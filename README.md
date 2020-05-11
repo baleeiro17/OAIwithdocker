@@ -1,4 +1,13 @@
-OAISIMwithdocker
+## OAISIM + FREE5gc with Docker.
+
+## Project Description
+
+In this repository, we developed an environment for simulating UE and ENB using l2NFAPI simulator from Open Air interface connected into 5g core from free5gcore. This work is on-going.
+
+For more information:
+* [free5gc](https://www.free5gc.org/)
+* [Open Air Interface](https://www.openairinterface.org/)
+
 
 ## Dependencies
 
