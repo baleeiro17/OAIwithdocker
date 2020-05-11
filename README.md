@@ -1,4 +1,4 @@
-## OAISIM + FREE5gc with Docker.
+## OAISIM + free5GC with Docker.
 
 ## Project Description
 
