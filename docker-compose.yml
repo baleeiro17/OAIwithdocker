@@ -65,6 +65,8 @@ services:
             - smf
             - amf
         privileged: true
+        cap_add:
+            - NET_ADMIN
         networks:
             net1:
                 ipv4_address: 192.188.2.253
@@ -76,6 +78,8 @@ services:
             - amf
             - enb
         privileged: true
+        cap_add:
+            - NET_ADMIN
         networks:
             net1:
                 ipv4_address: 192.188.2.254
