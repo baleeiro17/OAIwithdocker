@@ -9,6 +9,7 @@ RUN echo "l2nfapi      ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 USER l2nfapi
 USER root
 
+COPY user_api.c /ue_folder/openair3/NAS/UE/API/USER/user_api.c
 RUN DEBIAN_FRONTEND=noninteractive apt install -y tzdata
 RUN cd ue_folder/cmake_targets && sudo ./build_oai --UE -I -c
 
